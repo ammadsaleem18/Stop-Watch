@@ -2,7 +2,7 @@
 
 Stop Watch isn't just about tracking time, it's your handy tool to organize tasks, built with simple web languages like HTML, CSS, and JavaScript. Easily manage your daily to-dos on any device, be it your computer or phone. Its user-friendly design ensures everything runs smoothly, making task management a piece of cake!
 
-You can check it out: <a href="https://todolist-ammad.vercel.app/">Ammad - Stop Watch</a>.
+You can check it out: <a href="https://stopwatch-ammad.vercel.app/">Ammad - Stop Watch</a>.
 
 ## ✨ Features
 
