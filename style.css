@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    transition: all ease-in-out 0.2s;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.branding {
+    width: 240px;
+    height: 55px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 18px 18px 60px rgba(0, 0, 0, 0.233), inset -20px -20px 60px rgba(255, 255, 255, 0.233);
+}
+
+.branding:active {
+    scale: 0.90;
+}
+
+.branding a {
+    text-decoration: none;
+}
+
+.branding a p {
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+.light-dark-btn {
+    width: 183px;
+    height: 55px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 18px 18px 60px rgba(0, 0, 0, 0.233), inset -20px -20px 60px rgba(255, 255, 255, 0.233);
+}
+
+.light-dark-btn:active {
+    scale: 0.90;
+}
+
+.light-dark-btn p {
+    margin-right: 13px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.light-dark-btn .sun {
+    width: 23px;
+}
+
+.light-dark-btn .moon {
+    width: 20px;
+    display: none;
+}
+
+.main-2 {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.circle {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 18px 18px 60px rgba(0, 0, 0, 0.233), inset -20px -20px 60px rgba(255, 255, 255, 0.233);
+    cursor: default;
+}
+
+.circle p {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.btn {
+    margin-top: 9vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    width: 130px;
+    height: 40px;
+    margin: 0 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 18px 18px 60px rgba(0, 0, 0, 0.233), inset -20px -20px 60px rgba(255, 255, 255, 0.233);
+}
+
+.btn button:hover {
+    background-color: rgb(32, 178, 170);
+}
+
+.btn button:active {
+    background-color: rgb(12, 122, 117);
+    scale: 0.85;
+}
+
+@media (max-width:500px) {
+    * {
+        transition: all ease-in-out 0.15s;
+    }
+
+    .main {
+        height: 12vh;
+    }
+
+    .header {
+        height: 100%;
+        ;
+        padding: 5vh 5vw;
+    }
+
+    .branding {
+        width: 65vw;
+        border-radius: 12px;
+    }
+
+    .branding:active {
+        scale: 0.98;
+    }
+
+    .light-dark-btn {
+        width: 55px;
+        border-radius: 12px;
+    }
+
+    .light-dark-btn:active {
+        scale: 0.98;
+    }
+
+    .light-dark-btn p {
+        display: none;
+    }
+
+    .main-2 {
+        height: calc(100% - 12vh);
+    }
+
+    .content {
+        margin: 3vh 0;
+    }
+
+    .btn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5vw;
+        margin-top: 0;
+        margin-bottom: 1.5vh;
+    }
+
+    .btn button {
+        width: 90%;
+        height: 6vh;
+        margin: 1vh 0;
+    }
+
+    .btn button:active {
+        scale: 0.95;
+    }
+}
